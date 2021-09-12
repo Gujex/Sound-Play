@@ -1,0 +1,69 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sound Board</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <audio id="applause" src="sounds/applause.mp3"></audio>
+        <audio id="boo" src="sounds/boo.mp3"></audio>
+        <audio id="gasp" src="sounds/gasp.mp3"></audio>
+        <audio id="tada" src="sounds/tada.mp3"></audio>
+      
+
+        <script>
+           
+           const sounds = ["applause", "boo", "gasp", "tada"];
+
+           sounds.forEach((sound) => {
+               const btn = document.createElement("button");
+               btn.classList.add("btn");
+               btn.innerText = "click me";
+               btn.addEventListener("click", () => {
+                   const some = document.getElementById(sound).play();
+               } )
+
+               document.body.appendChild(btn);
+           }) 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           // const sounds = ["applause", "boo", "gasp", "tada"];
+
+            // sounds.forEach((sound) => {
+            //     const btn = document.createElement("button");
+            //     btn.innerText = sound;
+            //     btn.addEventListener("click", () => {
+            //         document.getElementById(sound).play();
+            //     })
+                
+
+
+
+            //     document.body.appendChild(btn);
+            // });
+        
+            
+        </script>
+
+    </body>
+</html>
